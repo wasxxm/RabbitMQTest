@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  # RabbitMQ service
+  rabbitmq:
+    image: rabbitmq:management  # Uses the RabbitMQ image with the management plugin
+    ports:
+      - "5672:5672"  # Exposes AMQP port
+      - "15672:15672"  # Exposes RabbitMQ Management UI port
+
+  # Producer service
+  producer:
+    build: ./producer  # Builds the image from the Dockerfile in the producer directory
+    environment:
+      - RABBITMQ_HOST=rabbitmq  # Sets the RabbitMQ host environment variable
+
+  # Consumer service
+  consumer:
+    build: ./consumer  # Builds the image from the Dockerfile in the consumer directory
+    environment:
+      - RABBITMQ_HOST=rabbitmq

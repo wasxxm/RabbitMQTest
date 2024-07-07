@@ -1,0 +1,2 @@
+# Dependency for interacting with RabbitMQ
+pika
