@@ -11,8 +11,8 @@ This project demonstrates a simple RabbitMQ setup with a producer and consumer u
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/wasxxm/RabbitMQTest.git
-    cd rabbitmq_test_task
+    git clone git@github.com:wasxxm/RabbitMQTest.git
+    cd RabbitMQTest
     ```
 
 2. Build and start the services using Docker Compose:
