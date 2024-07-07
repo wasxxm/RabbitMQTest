@@ -11,7 +11,7 @@ This project demonstrates a simple RabbitMQ setup with a producer and consumer u
 
 1. Clone the repository:
     ```sh
-    git clone <repository_url>
+    git clone https://github.com/wasxxm/RabbitMQTest.git
     cd rabbitmq_test_task
     ```
 
